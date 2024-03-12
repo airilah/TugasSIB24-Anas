@@ -1,0 +1,132 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+      <div class="logo">
+        <a href=""><img src="img/logo.png" class="logo" /></a>
+      </div>
+      <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="form.html">REGISTER</a></li>
+            <li><a href="jsdasar.html">INFORMATION</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="slides">
+  <div class="slide">
+      <img src="img/gambar1.png" alt="">
+  </div>
+  <div class="slide">
+      <img src="img/gambar2.png" alt="">
+  </div>
+  <div class="slide">
+      <img src="img/gambar3.png" alt="">
+  </div>
+  <div class="slide">
+      <img src="img/gambar4.png" alt="">
+  </div>
+  <div class="navigation">
+      <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+      <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+  </div>
+  </div>
+    
+  <section id="regis">
+    <h3>REGISTRATION FORM</h3>
+    <div class="container">
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="column">
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email aktif" required>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form-group">
+            <label for="no_hp">Nomor HP:</label>
+            <input type="tel" id="no_hp" name="no_hp" placeholder="No HP aktif" required>
+          </div>
+          <div class="form-group">
+            <label for="prodi">Program Studi:</label>
+            <select id="prodi" name="prodi" required>
+              <option value="">Pilih Program Studi</option>
+              <option value="Teknik Informatika">Teknik Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="Teknik Industri">Teknik Industri</option>
+              <option value="Teknik Elektro">Teknik Elektro</option>
+              <option value="Teknik Mesin">Teknik Mesin</option>
+              <option value="Teknik Mekatronika">Teknik Mekatronika</option>
+            </select>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form-group">
+            <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="jenis_kelamin_pria" name="jenis_kelamin" value="pria" required>
+                <label for="jenis_kelamin_pria">Laki-laki</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="jenis_kelamin_wanita" name="jenis_kelamin" value="wanita" required>
+                <label for="jenis_kelamin_wanita">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Hobi:</label><br>
+            <div class="hobi-option">
+              <div class="gender">
+                <input type="checkbox" id="membaca" name="hobi" value="olahraga">
+                <label for="membaca">Membaca</label>
+              <div class="gender">
+              </div>
+                <input type="checkbox" id="menulis" name="hobi" value="membaca">
+                <label for="menulis">Menulis</label>
+              <div class="gender">
+              </div>
+                <input type="checkbox" id="menyanyi" name="hobi" value="musik">
+                <label for="menyanyi">Menyanyi</label>
+              <div class="gender">
+              </div>
+                <input type="checkbox" id="Olahraga" name="hobi" value="musik">
+                <label for="Olahraga">Olahraga</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form-group">
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="foto_diri">Foto Diri:</label>
+            <input type="file" id="foto_diri" name="foto_diri" accept="image/*" required>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="layar-dalam">
+        <div class="copyright">Copyright &copy; Beasiswa Djarum</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
