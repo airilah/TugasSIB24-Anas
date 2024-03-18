@@ -1,24 +1,35 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener("DOMContentLoaded", function() {
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  document.getElementById('prevButton').addEventListener('click', function() {
+    plusSlides(-1);
+  });
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {
-    slideIndex = 1;
+  document.getElementById('nextButton').addEventListener('click', function() {
+    plusSlides(1);
+  });
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  if (n < 1) {
-    slideIndex = slides.length
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
+});
+
 
 document.getElementById("registerLink").addEventListener("click", function(event) {
   event.preventDefault(); // Hindari navigasi ke hash
@@ -31,3 +42,21 @@ document.getElementById("informasiLink").addEventListener("click", function(even
   document.getElementById("info").classList.remove("hidden"); // Hapus kelas hidden
   document.getElementById("regis").classList.add("hidden"); // Sembunyikan bagian registrasi jika sedang terbuka
 });
+
+
+var subJuduls = document.getElementsByClassName("sub-judul");
+
+for (var i = 0; i < subJuduls.length; i++) {
+  subJuduls[i].style.color = "#6f6f6f";
+  subJuduls[i].style.fontStyle = "italic";
+  subJuduls[i].style.fontSize = "20px";
+  subJuduls[i].style.padding = "10px";
+}
+
+var juduls = document.getElementsByClassName("judul");
+
+for (var i = 0; i < juduls.length; i++) {
+  juduls[i].style.fontStyle = "normal";
+  juduls[i].style.fontSize = "30px";
+  juduls[i].style.textAlign = "Center";
+}
