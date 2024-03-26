@@ -1,0 +1,76 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API CRUD</title>
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <div class="container1">
+    <div class="konten">
+        <div class="kanan">
+            <div class="tambah">
+                <form action="" onsubmit="tambah_data(event)">
+                    <h4>FORM TAMBAH PRODUK</h4>
+                    <div class="column">
+                      <div class="form-group">
+                        <label for="nama">Nama Produk:</label>
+                        <input type="text" name="nama_produk" id="nama_produk" required>                      </div>
+                      <div class="form-group">
+                        <label for="jumlah">Jumlah:</label>
+                        <input type="number" name="jumlah" id="jumlah" min="0" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="harga">Harga:</label>
+                        <input type="number" id="harga" name="harga"  min="0"  required>
+                      </div>
+                    </div>
+                    <button type="submit" value="tambah">Tambah</button>
+                </form>
+            </div>
+            <div class="edit">
+                <form action="" onsubmit="update_data(event)">
+                  <h4>FORM EDIT DATA PRODUK</h4>
+                    <div class="column">
+                      <input type="hidden" id="id_produk">
+                      <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" name="nama_produk" id="edit_nama_produk" required> <br> <br>
+                      </div>
+                      <div class="form-group">
+                        <label for="jumlah">Jumlah:</label>
+                        <input type="number" name="jumlah" id="edit_jumlah" min="0" required> <br> <br>
+                      </div>
+                      <div class="form-group">
+                        <label for="harga">Harga:</label>
+                        <input type="number" name="harga" id="edit_harga" min="0" required> <br> <br>
+                      </div>
+                    </div>
+                    <button type="submit" value="update">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="kiri">
+            <h4>DATA PRODUK</h4>
+            <div class="error"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <td> Nama</td>
+                        <td> Jumlah</td>
+                        <td> Harga</td>
+                        <td> Action </td>
+                    </tr>
+                </thead>
+                <tbody id="data_produk">
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>

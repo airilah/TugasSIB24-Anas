@@ -383,13 +383,13 @@ color: white;
 h2 {
   text-align: center;
 }
-.konten {
+/* .konten {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .kanan, .kiri {
   background-color: #EEEEEE;

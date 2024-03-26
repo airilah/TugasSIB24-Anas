@@ -1,4 +1,4 @@
-let endpoint = 'https://crudcrud.com/api/c0e57e8fd286414db1ca89b5394ea0cc/product/';
+let endpoint = 'https://crudcrud.com/api/c7238af8af6d43d0931804544c2f1ade/product/';
 
     fetch(endpoint)
         .then((response) => response.json())
@@ -13,8 +13,8 @@ let endpoint = 'https://crudcrud.com/api/c0e57e8fd286414db1ca89b5394ea0cc/produc
                     <td> ${data_produk.jumlah} </td>
                     <td> ${data_produk.harga} </td>
                     <td>
-                        <a href="#" class="btn button-edit" onclick="edit_data('${data_produk._id}')"> Edit </a>
-                        <a href="#" class="btn button-delete" onclick="delete_data('${data_produk._id}')"> Delete </a>
+                        <a href="#" class="tombol tombol-edit" onclick="edit_data('${data_produk._id}')"> Edit </a>
+                        <a href="#" class="tombol tombol-delete" onclick="delete_data('${data_produk._id}')"> Delete </a>
                     </td>
                 </tr>
                 `;
