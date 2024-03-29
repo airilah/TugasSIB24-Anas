@@ -53,10 +53,10 @@ for (var i = 0; i < subJuduls.length; i++) {
   subJuduls[i].style.padding = "10px";
 }
 
-// var juduls = document.getElementsByClassName("judul");
 
-// for (var i = 0; i < juduls.length; i++) {
-//   juduls[i].style.fontStyle = "normal";
-//   juduls[i].style.fontSize = "30px";
-//   juduls[i].style.textAlign = "Center";
-// }
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+}
+
+

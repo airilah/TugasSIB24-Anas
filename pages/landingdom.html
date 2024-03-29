@@ -9,17 +9,45 @@
   <body>
     <nav>
       <div class="logo">
-        <a href=""><img src="../img/logo.png" class="logo" /></a>
+        <a href=""><img src="img/logo.png" class="logo" alt="Logo" /></a>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="landingdom.html">HOME</a></li>
-          <li><a href="#regis" id="registerLink">REGISTER</a></li>
-          <li><a href="#info" id="informasiLink">INFORMATION</a></li>
-          <li><a href="productapi.html">PRODUCTAPI</a></li>
-          <li><a href="productarray.html">PRODUCTARRAY</a></li>
-        </ul>
-    </div>
+      <div class="menu" id="menu">
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Tugas P6</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="../index.html">HOME</a>
+            <a href="#regis" id="registerLink">REGISTER</a>
+            <a href="#info" id="informasiLink">INFORMATION</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Tugas P7</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="landingdom.html">LANDINGDOM</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Tugas P8</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="productapi.html">PRODUCTAPI</a>
+            <a href="productarray.html">PRODUCTARRAY</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Tugas P9</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="login-responsive.html" target="_blank">LOGIN</a>
+            <a href="product-responsive.html" target="_blank">RESPONSIVE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Tugas P10</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="login-layout.html" target="_blank">LOGIN</a>
+            <a href="dashboard.html" target="_blank">DASHBORAD</a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <div class="slides">
